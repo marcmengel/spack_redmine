@@ -22,8 +22,8 @@ class RedmineRubyDeps(BundlePackage):
 
     def setup_dependent_build_environment(self, env, dependent_spec):
         env.set("GEM_HOME", self.prefix.gems)
-        env.prepend("GEM_PATH", self.prefix.gems)
+        env.prepend_path("GEM_PATH", self.prefix.gems)
 
-    def setup_run_environment(self, env, dependent_spec):
+    def setup_run_environment(self, env):
         env.set("GEM_HOME", self.prefix.gems)
-        env.prepend("GEM_PATH", self.prefix.gems)
+        env.prepend_path("GEM_PATH", self.prefix.gems)
