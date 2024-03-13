@@ -1,0 +1,21 @@
+diff --git a/Gemfile b/Gemfile
+index 1aefe6e..14458e0 100644
+--- a/Gemfile
++++ b/Gemfile
+@@ -1,6 +1,6 @@
+ source 'https://rubygems.org'
+ 
+-gem 'jenkins_api_client', '~> 1.3.0'
++gem 'jenkins_api_client', '>= 1.3.0'
+ 
+ # HAML views
+ gem 'haml-rails'
+@@ -19,7 +19,7 @@ group :development, :test do
+   gem 'database_cleaner'
+ 
+   # Code coverage
+-  gem 'simplecov', '~> 0.9.1'
++  #gem 'simplecov', '~> 0.9.1'
+   gem 'simplecov-rcov'
+ 
+   # Junit results
